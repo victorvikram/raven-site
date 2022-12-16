@@ -19,5 +19,3 @@ The RAVEN site has two parts: a flask server (raven-server) and an html + js fro
 *Bash*: `export FLASK_APP=app`
 2. Then, run `flask run -h localhost -p 5000`. This runs the flask server on the port `5000`, which is where the front end will be sending its requests. If you must change the address of the server (not recommended) you will need to change all instances of the string `localhost:5000` in the file `static/js/main.39a7fb9c.js` to the new server address `<ADDRESS>:<PORT>`.
 And that's all!
-
-You may need to ensure that the line `let url = <url>` at the top of `app.js` in the RAVEN app root directory matches with the URL of the flask server (it will tell you the URL it is running on after you run `flask run`). Note that `localhost` and `127.0.0.1` are equivalent.
